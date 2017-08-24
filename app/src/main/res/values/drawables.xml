@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="of_btn_blue_light">#ff33b5e5</item>
+    <item type="drawable" name="of_line_gray_light">#ffdcdcdc</item>
+    <item type="drawable" name="list_separator_line">#ff333333</item>
+    <item type="drawable" name="listdiver">#eea8a8a8</item>
+    <item type="drawable" name="button_yellow_n">#ffff9532</item>
+    <item type="drawable" name="home_btn_press">#aa494949</item>
+    <item type="drawable" name="slidemenuitem_p">#ff444444</item>
+    <item type="drawable" name="home_green_line">#ff5ca828</item>
+    <item type="drawable" name="trans">#00000000</item>
+</resources>

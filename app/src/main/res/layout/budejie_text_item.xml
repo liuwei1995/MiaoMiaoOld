@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relat"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/paddingsize"
+    android:background="@drawable/car_easy_diaodu_car_item_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center_vertical"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/todetails"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left|center_vertical"
+            android:orientation="vertical" >
+
+            <com.zhaoyao.miaomiao.view.textview.MarqueeTextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/paddingsize"
+                android:singleLine="true"
+                android:text="快乐生活"
+                android:textSize="@dimen/logintextsize" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/paddingsize2"
+                android:singleLine="true"
+                android:text="2015-10-10 20:12"
+                android:textColor="@color/mediumseagreen"
+                android:textSize="@dimen/smalltextsize" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="快乐的一天开始了"
+            android:textIsSelectable="true"
+            android:textSize="@dimen/middeltextsize" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/tv_i_l_ad__lv_Being_loaded"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:padding="@dimen/dp_five"
+        android:text="正在加载..."
+        android:textColor="@color/text_color_red"
+        android:textSize="@dimen/dp_eighteen"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_i_l_ad__lv_Click_load"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:padding="@dimen/dp_five"
+         android:textColor="@color/text_color_red"
+        android:text="点击加载更多"
+        android:textSize="@dimen/dp_eighteen" />
+
+</FrameLayout>

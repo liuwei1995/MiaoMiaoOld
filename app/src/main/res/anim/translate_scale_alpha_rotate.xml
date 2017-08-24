@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set>
+    <!--使用方法 -->
+<!-- Animation animation = AnimationUtils.loadAnimation(this,R.layout.main);
+		view.startAnimation(animation); -->
+		<!-- 在startActivity方法后，执行overridePendingTransition方法， -->
+</set><!--
+ 动画类型
+
+Android的animation由四种类型组成
+
+XML中
+alpha 渐变透明度动画效果
+scale 渐变尺寸伸缩动画效果
+translate 画面转换位置移动动画效果
+rotate 画面转移旋转动画效果
+
+
+JavaCode中
+AlphaAnimation 渐变透明度动画效果
+ScaleAnimation 渐变尺寸伸缩动画效果
+TranslateAnimation 画面转换位置移动动画效果
+RotateAnimation 画面转移旋转动画效果
+
+Android动画模式
+
+Animation主要有两种动画模式：
+
+一种是tweened animation(渐变动画)
+XML中 JavaCode
+alpha AlphaAnimation
+scale ScaleAnimation
+
+
+一种是frame by frame(画面转换动画)
+
+XML中 JavaCode
+translate TranslateAnimation
+rotate RotateAnimation
+
+ 
+
+Android动画解析
+
+
+alpha xml 淡出效果
+
+ 
+
+ 
+
+[cpp]
+-->
+<!-- <?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <alpha
+        android:duration="500"
+        android:fromAlpha="1.0"
+        android:toAlpha="0.0" />
+
+</set>
+fromAlpha:开始时透明度
+toAlpha： 结束时透明度
+duration：动画持续时间
+[cpp] 
+
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <alpha
+        android:duration="500"
+        android:fromAlpha="1.0"
+        android:toAlpha="0.0" />
+
+</set>
+    fromAlpha:开始时透明度  
+    toAlpha： 结束时透明度  
+    duration：动画持续时间
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <alpha
+        android:duration="500"
+        android:fromAlpha="1.0"
+        android:toAlpha="0.0" />
+
+</set>
+    fromAlpha:开始时透明度
+    toAlpha： 结束时透明度
+    duration：动画持续时间
+
+
+
+
+alpha xml 淡入效果
+
+
+[cpp]
+
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <alpha
+        android:duration="500"
+        android:fromAlpha="0.0"
+        android:toAlpha="1.0" />
+
+</set>
+fromAlpha:开始时透明度
+toAlpha： 结束时透明度
+duration：动画持续时间
+[cpp]
+
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <alpha
+        android:duration="500"
+        android:fromAlpha="0.0"
+        android:toAlpha="1.0" />
+
+</set>
+    fromAlpha:开始时透明度  
+    toAlpha： 结束时透明度  
+    duration：动画持续时间
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <alpha
+        android:duration="500"
+        android:fromAlpha="0.0"
+        android:toAlpha="1.0" />
+
+</set>
+    fromAlpha:开始时透明度
+    toAlpha： 结束时透明度
+    duration：动画持续时间
+
+
+rotate.xml 旋转效果：
+[html] 
+<?xml v="1.0"encoding="utf-8"?>
+<setxmlns:android
+    android=""
+    apk=""
+    res=""
+    schemas.android.com=""
+    http:="" >
+
+    <rotate
+        android:duration="10000"
+        android:fromDegrees="300"
+        android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+        android:pivotX="10%"
+        android:pivotY="100%"
+        android:toDegrees="-360" />
+
+    <set>
+    </set>
+    
+fromDegrees 动画开始时的角度
+toDegrees 动画结束时物件的旋转角度,正代表顺时针
+pivotX 属性为动画相对于物件的X坐标的开始位置
+pivotY 属性为动画相对于物件的Y坐标的开始位置
+   
+    [html] view plaincopyprint?
+<?xml version="1.0" encoding="utf-8"?>
+    <set xmlns:android="http://schemas.android.com/apk/res/android" >
+        <rotate
+            android:duration="10000"
+            android:fromDegrees="300"
+            android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+            android:pivotX="10%"
+            android:pivotY="100%"
+            android:toDegrees="-360" />
+    </set>
+    
+  fromDegrees   动画开始时的角度  
+  toDegrees     动画结束时物件的旋转角度,正代表顺时针    
+  pivotX    属性为动画相对于物件的X坐标的开始位置 
+  pivotY    属性为动画相对于物件的Y坐标的开始位置
+   
+
+<?xml version="1.0" encoding="utf-8"?>
+    <set xmlns:android="http://schemas.android.com/apk/res/android" >
+        <rotate
+            android:duration="10000"
+            android:fromDegrees="300"
+            android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+            android:pivotX="10%"
+            android:pivotY="100%"
+            android:toDegrees="-360" />
+    </set>
+    
+  fromDegrees   动画开始时的角度
+  toDegrees     动画结束时物件的旋转角度,正代表顺时针  
+  pivotX   属性为动画相对于物件的X坐标的开始位置
+  pivotY  属性为动画相对于物件的Y坐标的开始位置
+   
+
+
+    
+scale.xml 缩放效果：
+
+
+[cpp]
+   
+<?xml version="1.0" encoding="utf-8"?>
+    <set xmlns:android="http://schemas.android.com/apk/res/android" >
+        <scale
+            android:duration="10000"
+            android:fromXScale="0.0"
+            android:fromYScale="0.0"
+            android:interpolator="@android:anim/decelerate_interpolator"
+            android:pivotX="50%"
+            android:pivotY="50%"
+            android:repeatCount="1"
+            android:repeatMode="reverse"
+            android:startOffset="0"
+            android:toXScale="1.5"
+            android:toYScale="1.5" />
+    </set>
+
+    
+fromXDelta,fromYDelta 起始时X，Y座标,屏幕右下角的座标是X:320,Y:480
+toXDelta， toYDelta 动画结束时X,Y的座标
+   
+    
+interpolator 指定动画插入器
+常见的有加速减速插入器 accelerate_decelerate_interpolator
+加速插入器 accelerate_interpolator，
+减速插入器 decelerate_interpolator。
+fromXScale,fromYScale， 动画开始前X,Y的缩放，0.0为不显示， 1.0为正常大小
+toXScale，toYScale， 动画最终缩放的倍数， 1.0为正常大小，大于1.0放大
+pivotX， pivotY 动画起始位置，相对于屏幕的百分比,两个都为50%表示动画从屏幕中间开始
+startOffset， 动画多次执行的间隔时间，如果只执行一次，执行前会暂停这段时间，
+单位毫秒 duration，一次动画效果消耗的时间，单位毫秒，
+值越小动画速度越快 repeatCount，动画重复的计数，动画将会执行该值+1次
+repeatMode，动画重复的模式，reverse为反向，当第偶次执行时，动画方向会相反。
+restart为重新执行，方向不变
+   
+    [cpp]
+<?xml version="1.0" encoding="utf-8"?>
+    <set xmlns:android="http://schemas.android.com/apk/res/android" >
+        <scale
+            android:duration="10000"
+            android:fromXScale="0.0"
+            android:fromYScale="0.0"
+            android:interpolator="@android:anim/decelerate_interpolator"
+            android:pivotX="50%"
+            android:pivotY="50%"
+            android:repeatCount="1"
+            android:repeatMode="reverse"
+            android:startOffset="0"
+            android:toXScale="1.5"
+            android:toYScale="1.5" />
+    </set>
+
+    
+fromXDelta,fromYDelta       起始时X，Y座标,屏幕右下角的座标是X:320,Y:480  
+toXDelta， toYDelta      动画结束时X,Y的座标
+   
+    
+interpolator                    指定动画插入器 
+常见的有加速减速插入器         accelerate_decelerate_interpolator 
+加速插入器               accelerate_interpolator， 
+减速插入器               decelerate_interpolator。  
+fromXScale,fromYScale，         动画开始前X,Y的缩放，0.0为不显示，  1.0为正常大小 
+toXScale，toYScale，          动画最终缩放的倍数， 1.0为正常大小，大于1.0放大 
+pivotX，  pivotY         动画起始位置，相对于屏幕的百分比,两个都为50%表示动画从屏幕中间开始  
+startOffset，                动画多次执行的间隔时间，如果只执行一次，执行前会暂停这段时间， 
+                    单位毫秒 duration，一次动画效果消耗的时间，单位毫秒， 
+                    值越小动画速度越快 repeatCount，动画重复的计数，动画将会执行该值+1次  
+                    repeatMode，动画重复的模式，reverse为反向，当第偶次执行时，动画方向会相反。 
+                    restart为重新执行，方向不变
+   
+
+<?xml version="1.0" encoding="utf-8"?>
+    <set xmlns:android="http://schemas.android.com/apk/res/android" >
+        <scale
+            android:duration="10000"
+            android:fromXScale="0.0"
+            android:fromYScale="0.0"
+            android:interpolator="@android:anim/decelerate_interpolator"
+            android:pivotX="50%"
+            android:pivotY="50%"
+            android:repeatCount="1"
+            android:repeatMode="reverse"
+            android:startOffset="0"
+            android:toXScale="1.5"
+            android:toYScale="1.5" />
+    </set>
+
+    
+fromXDelta,fromYDelta    起始时X，Y座标,屏幕右下角的座标是X:320,Y:480
+toXDelta， toYDelta      动画结束时X,Y的座标
+   
+    
+interpolator                    指定动画插入器
+常见的有加速减速插入器         accelerate_decelerate_interpolator
+加速插入器       accelerate_interpolator，
+减速插入器       decelerate_interpolator。
+fromXScale,fromYScale，         动画开始前X,Y的缩放，0.0为不显示，  1.0为正常大小
+toXScale，toYScale，         动画最终缩放的倍数， 1.0为正常大小，大于1.0放大
+pivotX，  pivotY      动画起始位置，相对于屏幕的百分比,两个都为50%表示动画从屏幕中间开始
+startOffset，       动画多次执行的间隔时间，如果只执行一次，执行前会暂停这段时间，
+        单位毫秒 duration，一次动画效果消耗的时间，单位毫秒，
+        值越小动画速度越快 repeatCount，动画重复的计数，动画将会执行该值+1次
+        repeatMode，动画重复的模式，reverse为反向，当第偶次执行时，动画方向会相反。
+        restart为重新执行，方向不变
+   
+
+
+    
+translate.xml 移动效果：
+[html]
+   
+<?xml version="1.0" encoding="utf-8"?>
+    <setxmlns:android
+        android=""
+        apk=""
+        res=""
+        schemas.android.com=""
+        http:="" >
+        <translate
+            android:duration="10000"
+            android:fromXDelta="320"
+            android:fromYDelta="480"
+            android:toXDelta="0"
+            android:toYDelta="0" />
+
+        <set>
+        </set>
+        
+fromXDelta,fromYDelta 起始时X，Y座标,屏幕右下角的座标是X:320,Y:480
+toXDelta， toYDelta 动画结束时X,Y的座标
+       
+        [html]
+<?xml version="1.0" encoding="utf-8"?>
+        <set xmlns:android="http://schemas.android.com/apk/res/android" >
+            <translate
+                android:duration="10000"
+                android:fromXDelta="320"
+                android:fromYDelta="480"
+                android:toXDelta="0"
+                android:toYDelta="0" />
+        </set>
+        
+fromXDelta,fromYDelta   起始时X，Y座标,屏幕右下角的座标是X:320,Y:480  
+toXDelta， toYDelta     动画结束时X,Y的座标
+       
+
+<?xml version="1.0" encoding="utf-8"?>
+        <set xmlns:android="http://schemas.android.com/apk/res/android" >
+            <translate
+                android:duration="10000"
+                android:fromXDelta="320"
+                android:fromYDelta="480"
+                android:toXDelta="0"
+                android:toYDelta="0" />
+        </set> -->
+        <!--
+fromXDelta,fromYDelta   起始时X，Y座标,屏幕右下角的座标是X:320,Y:480
+toXDelta， toYDelta     动画结束时X,Y的座标
+        -->

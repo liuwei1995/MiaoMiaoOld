@@ -1,0 +1,26 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="shadow_width">15dp</dimen>
+    <dimen name="slidingmenu_offset">80dp</dimen>
+    <dimen name="dp_forty">40dp</dimen>
+    <dimen name="dp_thirty">30dp</dimen>
+    <dimen name="dp_eighteen">18dp</dimen>
+    <dimen name="dp_sixteen">16dp</dimen>
+    <dimen name="dp_fourteen">14dp</dimen>
+    <dimen name="dp_twelve">12dp</dimen>
+    <dimen name="dp_ten">10dp</dimen>
+    <dimen name="dp_eight">8dp</dimen>
+    <dimen name="dp_five">5dp</dimen>
+    <dimen name="dp_four">4dp</dimen>
+    <!--  -->
+    <dimen name="paddingsize">10dip</dimen>
+    <dimen name="logintextsize">18sp</dimen>
+    <dimen name="paddingsize2">5dip</dimen>
+    <dimen name="smalltextsize">14sp</dimen>
+    <dimen name="middeltextsize">16sp</dimen>
+    <dimen name="progresssize">50dip</dimen>
+<dimen name="progresskuan">4dip</dimen>
+</resources>

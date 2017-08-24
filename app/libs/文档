@@ -1,0 +1,36 @@
+信鸽:
+	Xg_sdk_v2.43_20160308_1031.jar
+	wup-1.0.0.E-SNAPSHOT.jar
+	jg_filter_sdk_1.1.jar
+	armeabi:
+			libtpnsSecurity.so
+			libtpnsWatchdog.so
+qq登录:
+		mta-sdk-1.6.2.jar
+		open_sdk_r5509.jar
+有米广告:
+		YoumiSdk_v6.1.0_2016-02-26.jar
+
+京东广告:
+		jd_adsdk.jar
+
+搜狐视频播放插件:
+			  SohuPlayerSDK_201512081716.jar
+			  assets:	rawso
+			  armeabi:
+			  			libSHMoblieUgcodeJni.so		
+芒果广告:
+		AdsMOGO_Android_SDK_1.6.4.jar
+
+歌曲播放:
+		class.LyricParser
+		antlr.jar、chardet.jar		
+		
+		
+		
+		
+		
+		
+		
+		
+		
