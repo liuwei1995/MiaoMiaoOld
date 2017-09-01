@@ -29,7 +29,7 @@ import java.util.List;
  * @author dell
  *
  */
-@SuppressLint("Recycle")
+@SuppressLint({"Recycle", "ValidFragment"})
 public class VideoFragment extends Fragment {
 	private MainActivity context;
 	public VideoFragment(Context context) {

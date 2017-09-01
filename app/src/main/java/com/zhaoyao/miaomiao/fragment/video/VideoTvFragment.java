@@ -1,10 +1,6 @@
 package com.zhaoyao.miaomiao.fragment.video;
 
-import java.util.List;
-
-import org.apache.http.Header;
-import org.json.JSONObject;
-
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -35,6 +31,11 @@ import com.zhaoyao.miaomiao.util.UserJSON;
 import com.zhaoyao.miaomiao.util.inject.InjectView;
 import com.zhaoyao.miaomiao.util.inject.ViewInject;
 
+import org.apache.http.Header;
+import org.json.JSONObject;
+
+import java.util.List;
+@SuppressLint("ValidFragment")
 public class VideoTvFragment extends Fragment implements OnItemClickListener{
 	private static final String TAG = MainActivity.class.getName();
 	@ViewInject(id = R.id.ll_video_fragment_tv)

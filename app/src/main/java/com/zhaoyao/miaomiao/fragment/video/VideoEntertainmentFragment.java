@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.json.JSONObject;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -32,6 +33,7 @@ import com.zhaoyao.miaomiao.util.UserJSON;
 import com.zhaoyao.miaomiao.util.inject.InjectView;
 import com.zhaoyao.miaomiao.util.inject.ViewInject;
 
+@SuppressLint("ValidFragment")
 public class VideoEntertainmentFragment  extends Fragment implements OnItemClickListener{
 	private Context mContext;
 	private GridView gridViewpositive;

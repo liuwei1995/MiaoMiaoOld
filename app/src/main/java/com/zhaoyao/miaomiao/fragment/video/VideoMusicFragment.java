@@ -1,11 +1,6 @@
 package com.zhaoyao.miaomiao.fragment.video;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import org.apache.http.Header;
-import org.json.JSONObject;
-
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.os.Bundle;
 import android.os.Handler;
@@ -16,8 +11,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
-import android.widget.AbsListView;
-import android.widget.AbsListView.OnScrollListener;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.GridView;
@@ -32,7 +25,6 @@ import com.zhaoyao.miaomiao.adapter.ZhaoYaoAdapter;
 import com.zhaoyao.miaomiao.controller.video.VideoController;
 import com.zhaoyao.miaomiao.entity.video.souhu.MusicEntity;
 import com.zhaoyao.miaomiao.helper.PlayVideoHelper;
-import com.zhaoyao.miaomiao.log.MMLog;
 import com.zhaoyao.miaomiao.util.HttpClientUtils;
 import com.zhaoyao.miaomiao.util.ListViewHeightUtil;
 import com.zhaoyao.miaomiao.util.SharedPreferencesUtil;
@@ -41,6 +33,12 @@ import com.zhaoyao.miaomiao.util.inject.InjectView;
 import com.zhaoyao.miaomiao.util.inject.ViewInject;
 import com.zhaoyao.miaomiao.util.time.SimpleDateFormatUtil;
 
+import org.apache.http.Header;
+import org.json.JSONObject;
+
+import java.util.ArrayList;
+import java.util.List;
+@SuppressLint("ValidFragment")
 public class VideoMusicFragment  extends Fragment implements OnItemClickListener{
 	private Context mContext;
 	private GridView gridViewpositive;

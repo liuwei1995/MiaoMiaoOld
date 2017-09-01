@@ -45,6 +45,7 @@ import java.util.List;
  * 编写时间: 2016年4月13日下午2:01:03
  * 类说明 :  阿凡达最新趣图
  */
+@SuppressLint("ValidFragment")
 public class DTLatestOnFragment extends Fragment implements IXListViewListener,OnClickListener,OnScrollListener{
 
 	private LinearLayout netexceptionLayout,nodataLayout;

@@ -1,9 +1,6 @@
 package com.zhaoyao.miaomiao.fragment.video;
 
-import java.util.List;
-
-import org.json.JSONObject;
-
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -32,12 +29,17 @@ import com.zhaoyao.miaomiao.util.ListViewHeightUtil;
 import com.zhaoyao.miaomiao.util.UserJSON;
 import com.zhaoyao.miaomiao.util.inject.InjectView;
 import com.zhaoyao.miaomiao.util.inject.ViewInject;
+
+import org.json.JSONObject;
+
+import java.util.List;
 /**
  * 综艺
  * @author lw
  * 编写时间: 2016年4月25日下午4:31:50
  * 类说明 :
  */
+@SuppressLint("ValidFragment")
 public class VideoVarietyFragment  extends Fragment implements OnItemClickListener{
 	private Context mContext;
 	private GridView gridViewpositive;

@@ -6,6 +6,7 @@ import java.util.List;
 import org.apache.http.Header;
 import org.json.JSONObject;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.os.Bundle;
 import android.os.Handler;
@@ -38,6 +39,7 @@ import com.zhaoyao.miaomiao.util.inject.InjectView;
 import com.zhaoyao.miaomiao.util.inject.ViewInject;
 import com.zhaoyao.miaomiao.util.time.SimpleDateFormatUtil;
 
+@SuppressLint("ValidFragment")
 public class VideoAnimeFragment  extends Fragment implements OnItemClickListener{
 	private Context mContext;
 	private GridView gridViewpositive;

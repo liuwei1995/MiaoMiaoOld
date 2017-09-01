@@ -36,6 +36,7 @@ import java.util.List;
  * @author lenovo
  *
  */
+@SuppressLint("ValidFragment")
 public class PicFragment extends Fragment implements IXListViewListener,
 		OnClickListener {
 

@@ -1,5 +1,6 @@
 package com.zhaoyao.miaomiao.fragment.slidingmenu;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -26,6 +27,7 @@ import com.zhaoyao.miaomiao.util.inject.ViewInject;
  * @date 
  * @description 侧边栏菜单	
  */
+@SuppressLint("ValidFragment")
 public class LeftFragment extends Fragment{
 	@ViewInject(id = R.id.tv_lay_menu_name)
 	private TextView tv_lay_menu_name;

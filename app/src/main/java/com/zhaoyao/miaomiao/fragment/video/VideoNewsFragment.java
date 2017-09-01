@@ -1,9 +1,6 @@
 package com.zhaoyao.miaomiao.fragment.video;
 
-import java.util.List;
-
-import org.json.JSONObject;
-
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -31,6 +28,10 @@ import com.zhaoyao.miaomiao.util.UserJSON;
 import com.zhaoyao.miaomiao.util.inject.InjectView;
 import com.zhaoyao.miaomiao.util.inject.ViewInject;
 
+import org.json.JSONObject;
+
+import java.util.List;
+@SuppressLint("ValidFragment")
 public class VideoNewsFragment  extends Fragment implements OnClickListener{
 	private Context mContext;
 	public VideoNewsFragment(Context context) {

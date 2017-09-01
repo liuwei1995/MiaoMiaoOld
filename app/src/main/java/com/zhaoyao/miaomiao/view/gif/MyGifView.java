@@ -1,12 +1,12 @@
 package com.zhaoyao.miaomiao.view.gif;
 
-import com.zhaoyao.miaomiao.R;
-
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Movie;
 import android.util.AttributeSet;
 import android.view.View;
+
+import com.zhaoyao.miaomiao.R;
 
 public class MyGifView extends View {
 	private long movieStart;
@@ -17,7 +17,7 @@ public class MyGifView extends View {
 		super(context, attributeSet);
 		// 以文件流（InputStream）读取进gif图片资源
 		movie = Movie.decodeStream(getResources().openRawResource(
-				R.drawable.touxiang));
+				R.raw.touxiang));
 	}
 
 	@Override

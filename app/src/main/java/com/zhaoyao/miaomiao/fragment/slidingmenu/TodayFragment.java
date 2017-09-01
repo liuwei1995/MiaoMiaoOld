@@ -1,5 +1,6 @@
 package com.zhaoyao.miaomiao.fragment.slidingmenu;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -13,6 +14,7 @@ import com.zhaoyao.miaomiao.R;
  * @author wuwenjie
  * @description 今日
  */
+@SuppressLint("ValidFragment")
 public class TodayFragment extends Fragment {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {

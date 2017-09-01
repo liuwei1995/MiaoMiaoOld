@@ -10,7 +10,6 @@
         style="@style/MyListViewHasDivider"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:layout_below="@+id/contentView"
         android:layout_marginLeft="@dimen/paddingsize"
         android:layout_marginRight="@dimen/paddingsize"
         android:divider="@null" />
@@ -26,7 +25,6 @@
         android:id="@+id/netexception"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/contentView"
         android:background="@drawable/button_click_selected"
         android:gravity="center|center_horizontal"
         android:orientation="vertical"

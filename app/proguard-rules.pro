@@ -132,6 +132,10 @@ public void *(android.view.View);
 #保持 Parcelable 不被混淆
 -keep class * implements android.os.Parcelable {
 public static final android.os.Parcelable$Creator *;
+private <fields>;
+!static !transient <fields>;
+!private <fields>;
+!private <methods>;
 }
 
 
@@ -261,6 +265,7 @@ public static <fields>;
 
 #start---------------------------------------高德地图----------------------------------------------start
 #3D 地图 V5.0.0之前：
+
 -keep   class com.amap.api.maps.**{*;}
 -keep   class com.autonavi.amap.mapcore.*{*;}
 -keep   class com.amap.api.trace.**{*;}
@@ -319,3 +324,20 @@ public static <fields>;
 # for DexGuard only
 #-keepresourcexmlelements manifest/application/meta-data@value=GlideModule
 #end----------------------------------------- Glide----------------------------------------------end
+-dontoptimize
+
+-keepattributes InnerClasses
+-keep class com.sohu.player.SohuMediaPlayer$* {
+    *;
+}
+
+-libraryjars libs/SohuPlayerSDK_201512081716.jar
+-keep class com.admaster.mobile.sohu.app.ad.** {*;}
+-keep class com.miaozhen.sohutv.mzmonitor.** {*;}
+-keep class com.sohu.** {*;}
+-keep class com.sohuvideo.** {*;}
+
+-dontwarn com.admaster.mobile.sohu.app.ad.**
+-dontwarn com.miaozhen.sohutv.mzmonitor.**
+-dontwarn com.sohu.**
+-dontwarn com.sohuvideo.**

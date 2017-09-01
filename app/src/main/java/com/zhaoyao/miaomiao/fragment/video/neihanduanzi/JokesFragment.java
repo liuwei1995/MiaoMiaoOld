@@ -49,7 +49,7 @@ import com.zhaoyao.miaomiao.util.inject.ViewInject;
 * 类说明 : 推荐
  */
 
-@SuppressLint("ResourceAsColor")
+@SuppressLint({"ResourceAsColor", "ValidFragment"})
 public class JokesFragment extends Fragment implements OnScrollListener,OnItemClickListener,SwipyRefreshLayout.OnRefreshListener{
 	private Context mContext;
 	public JokesFragment(Context context) {

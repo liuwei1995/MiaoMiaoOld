@@ -1,11 +1,6 @@
 package com.zhaoyao.miaomiao.fragment.video.souhu;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import org.apache.http.Header;
-import org.json.JSONObject;
-
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.os.Bundle;
 import android.os.Handler;
@@ -38,11 +33,18 @@ import com.zhaoyao.miaomiao.util.UserJSON;
 import com.zhaoyao.miaomiao.util.inject.InjectView;
 import com.zhaoyao.miaomiao.util.inject.ViewInject;
 import com.zhaoyao.miaomiao.util.time.SimpleDateFormatUtil;
+
+import org.apache.http.Header;
+import org.json.JSONObject;
+
+import java.util.ArrayList;
+import java.util.List;
 /**
  * 搞笑
  * @author lw
  *
  */
+@SuppressLint("ValidFragment")
 public class VideoFunnyFragment  extends Fragment implements OnItemClickListener{
 	private Context mContext;
 	private GridView gridViewpositive;
